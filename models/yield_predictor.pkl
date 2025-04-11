@@ -1,0 +1,18 @@
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+import pickle
+
+# Load the dataset
+df = pd.read_csv('data/farmer_advisor_dataset.csv')
+
+# Define features (X) and target (y)
+X = df[['Soil_pH', 'Soil_Moisture', 'Temperature_C', 'Rainfall_mm', 'Fertilizer_Usage_kg', 'Pesticide_Usage_kg']]
+y = df['Crop_Yield_ton']
+
+# Train the model
+model = LinearRegression()
+model.fit(X, y)
+
+# Save the model
+with open('models/yield_predictor.pkl', 'wb') as f:
+    pickle.dump(model, f)
