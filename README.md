@@ -26,3 +26,89 @@ All agents share a common **SQLite memory (`memory.db`)** for persistent collabo
 
 ## 🧱 Project Structure
 
+sustainable_farming_ai/
+│
+├── agents/
+│   ├── farmer_agent.py
+│   ├── advisor_agent.py
+│   ├── market_agent.py
+│   ├── weather_agent.py
+│   └── sustainability_agent.py
+│
+├── models/
+│   ├── yield_predictor.pkl         # Linear Regression model
+│   ├── sustainability_model.pkl    # Random Forest model
+│
+├── data/
+│   ├── farmer_advisor_dataset.csv
+│   ├── market_researcher_dataset.csv
+│
+├── database/
+│   └── memory.db                   # SQLite database
+│
+├── utils/
+│   └── db_handler.py
+│
+├── main.py                         # Entry point, orchestrates all agents
+└── requirements.txt
+
+
+---
+
+## 📊 Datasets Used
+
+1. **farmer_advisor_dataset.csv**  
+   Features: Soil pH, Moisture, Temperature, Rainfall, Fertilizer & Pesticide usage, Crop Yield, Sustainability Score
+
+2. **market_researcher_dataset.csv**  
+   Features: Product, Price per ton, Demand/Supply Index, Weather & Seasonal Factors, Consumer Trend Index
+
+---
+
+## 🧠 Machine Learning Models
+
+| Model                     | Type               | Output                         | File                          |
+|--------------------------|--------------------|--------------------------------|-------------------------------|
+| Yield Predictor          | Linear Regression  | Predicts `Crop_Yield_ton`      | `models/yield_predictor.pkl` |
+| Sustainability Predictor | Random Forest      | Predicts `Sustainability_Score`| `models/sustainability_model.pkl` |
+
+Train using:
+
+```bash
+python models/train_yield_model.py
+python models/train_sustainability_model.py
+
+---
+## 💡 Key Features
+
+✅ Multi-agent system for collaborative decision-making
+✅ Predictive models for yield and sustainability
+✅ Market-aware crop recommendation
+✅ SQLite long-term memory for agent context
+✅ Scalable, modular code structure
+
+---
+
+##🌍 Impact & Benefits
+
+🌱 Promotes sustainable farming (low pesticide, optimal water usage)
+📈 Helps farmers choose profitable crops based on real market trends
+🧠 Boosts decision-making using AI-driven collaboration
+📉 Reduces carbon footprint and soil erosion
+
+---
+##📌 Future Enhancements
+
+Integrate live weather APIs
+Add crop disease prediction using image input
+Deploy as a web-based advisor portal (Streamlit/FastAPI)
+Introduce LLM-powered Natural Language Farmer Interface
+
+---
+##🛠 Tech Stack
+
+Python, SQLite, Pandas, Scikit-learn
+Modular agent-based architecture
+Git, GitHub, Git LFS (for large model files)
+
+---
