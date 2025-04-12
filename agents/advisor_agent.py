@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 
 class AdvisorAgent:
-    def __init__(self, model_path='models/yield_predictor.py'):
+    def __init__(self, model_path='models/yield_predictor.pkl'):
         with open(model_path, 'rb') as f:
             self.model = pickle.load(f)
 

@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 
 class SustainabilityAgent:
-    def __init__(self, model_path='models/sustainability_model.py'):
+    def __init__(self, model_path='models/sustainability_model.pkl'):
         with open(model_path, 'rb') as f:
             self.model = pickle.load(f)
 
