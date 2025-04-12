@@ -26,32 +26,7 @@ All agents share a common **SQLite memory (`memory.db`)** for persistent collabo
 
 ## 🧱 Project Structure
 
-sustainable_farming_ai/
-│
-├── agents/
-│   ├── farmer_agent.py
-│   ├── advisor_agent.py
-│   ├── market_agent.py
-│   ├── weather_agent.py
-│   └── sustainability_agent.py
-│
-├── models/
-│   ├── yield_predictor.pkl         # Linear Regression model
-│   ├── sustainability_model.pkl    # Random Forest model
-│
-├── data/
-│   ├── farmer_advisor_dataset.csv
-│   ├── market_researcher_dataset.csv
-│
-├── database/
-│   └── memory.db                   # SQLite database
-│
-├── utils/
-│   └── db_handler.py
-│
-├── main.py                         # Entry point, orchestrates all agents
-└── requirements.txt
-
+![Structure](https://raw.githubusercontent.com/SOHAM212003/sustainable_farming_ai/presentation/structure.png)
 
 ---
 
