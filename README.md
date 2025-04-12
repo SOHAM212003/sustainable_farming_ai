@@ -22,6 +22,9 @@ We developed an intelligent, modular system that simulates collaboration between
 
 All agents share a common **SQLite memory (`memory.db`)** for persistent collaboration.
 
+
+![Full Implimentation](presentation/full_implimentation.png)
+
 ---
 
 ## 🧱 Project Structure
