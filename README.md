@@ -68,7 +68,6 @@ python models/train_sustainability_model.py
 ✅ Scalable, modular code structure
 
 ---
-
 ##🌍 Impact & Benefits
 
 🌱 Promotes sustainable farming (low pesticide, optimal water usage)
