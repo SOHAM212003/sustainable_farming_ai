@@ -26,7 +26,7 @@ All agents share a common **SQLite memory (`memory.db`)** for persistent collabo
 
 ## 🧱 Project Structure
 
-![Architecture](presentation/structure.png)
+![Structure](presentation/Structure.png)
 
 
 ---
