@@ -26,7 +26,7 @@ All agents share a common **SQLite memory (`memory.db`)** for persistent collabo
 
 ## 🧱 Project Structure
 
-![Structure](https://raw.githubusercontent.com/SOHAM212003/sustainable_farming_ai/presentation/structure.png)
+![Structure](https://raw.githubusercontent.com/SOHAM212003/sustainable_farming_ai/main/presentation/structure.png)
 
 ---
 
